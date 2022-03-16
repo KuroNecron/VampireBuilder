@@ -254,7 +254,7 @@ namespace Vampire_Builder
             pngMannajja.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Mannajja.png", UriKind.Relative));
 
             pngBackgroundVandalier.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
-            //pngVandalier.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Vandalier.png", UriKind.Relative)); //Missing Sprite
+            pngVandalier.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Vandalier.png", UriKind.Relative)); //Missing Sprite
             #endregion
             #endregion
         }
