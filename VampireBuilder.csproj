@@ -7,4 +7,294 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="res\Character.json" />
+    <None Remove="res\Characters\Select-Antonio.png" />
+    <None Remove="res\Characters\Select-Arca.png" />
+    <None Remove="res\Characters\Select-Cavallo.png" />
+    <None Remove="res\Characters\Select-Christine.png" />
+    <None Remove="res\Characters\Select-Clerici.png" />
+    <None Remove="res\Characters\Select-Dommario.png" />
+    <None Remove="res\Characters\Select-Exdash.png" />
+    <None Remove="res\Characters\Select-Gennaro.png" />
+    <None Remove="res\Characters\Select-Imelda.png" />
+    <None Remove="res\Characters\Select-Krochi.png" />
+    <None Remove="res\Characters\Select-Lama.png" />
+    <None Remove="res\Characters\Select-missingN.png" />
+    <None Remove="res\Characters\Select-Mortaccio.png" />
+    <None Remove="res\Characters\Select-Pasqualina.png" />
+    <None Remove="res\Characters\Select-Poe.png" />
+    <None Remove="res\Characters\Select-Poppea.png" />
+    <None Remove="res\Characters\Select-Porta.png" />
+    <None Remove="res\Characters\Select-Red_Death.png" />
+    <None Remove="res\Evolutions\Sprite-Bloody_Tear.png" />
+    <None Remove="res\Evolutions\Sprite-Death_Spiral.png" />
+    <None Remove="res\Evolutions\Sprite-Gorgeous_Moon.png" />
+    <None Remove="res\Evolutions\Sprite-Heaven_Sword.png" />
+    <None Remove="res\Evolutions\Sprite-Hellfire.png" />
+    <None Remove="res\Evolutions\Sprite-Holy_Wand.png" />
+    <None Remove="res\Evolutions\Sprite-La_Borra.png" />
+    <None Remove="res\Evolutions\Sprite-Mannajja.png" />
+    <None Remove="res\Evolutions\Sprite-Soul_Eater.png" />
+    <None Remove="res\Evolutions\Sprite-Thousand_Edge.png" />
+    <None Remove="res\Evolutions\Sprite-Thunder_Loop.png" />
+    <None Remove="res\Evolutions\Sprite-Unholy_Vespers.png" />
+    <None Remove="res\Images\introBG.png" />
+    <None Remove="res\Images\PowerUpBackground.png" />
+    <None Remove="res\Images\title.png" />
+    <None Remove="res\Items\Sprite-Armor.png" />
+    <None Remove="res\Items\Sprite-Attractorb.png" />
+    <None Remove="res\Items\Sprite-Bracer.png" />
+    <None Remove="res\Items\Sprite-Candelabrador.png" />
+    <None Remove="res\Items\Sprite-Clover.png" />
+    <None Remove="res\Items\Sprite-Crown.png" />
+    <None Remove="res\Items\Sprite-Duplicator.png" />
+    <None Remove="res\Items\Sprite-Empty_Tome.png" />
+    <None Remove="res\Items\Sprite-Hollow_Heart.png" />
+    <None Remove="res\Items\Sprite-Pummarola.png" />
+    <None Remove="res\Items\Sprite-Reroll.png" />
+    <None Remove="res\Items\Sprite-Skip.png" />
+    <None Remove="res\Items\Sprite-Skull_O%27Maniac.png" />
+    <None Remove="res\Items\Sprite-Spellbinder.png" />
+    <None Remove="res\Items\Sprite-Spinach.png" />
+    <None Remove="res\Items\Sprite-Stone_Mask.png" />
+    <None Remove="res\Items\Sprite-Tiragisu.png" />
+    <None Remove="res\Items\Sprite-Wings.png" />
+    <None Remove="res\Weapons\Sprite-Axe.png" />
+    <None Remove="res\Weapons\Sprite-Bone.png" />
+    <None Remove="res\Weapons\Sprite-Cherry_Bomb.png" />
+    <None Remove="res\Weapons\Sprite-Clock_Lancet.png" />
+    <None Remove="res\Weapons\Sprite-Cross.png" />
+    <None Remove="res\Weapons\Sprite-Ebony_Wings.png" />
+    <None Remove="res\Weapons\Sprite-Fire_Wand.png" />
+    <None Remove="res\Weapons\Sprite-Garlic.png" />
+    <None Remove="res\Weapons\Sprite-King_Bible.png" />
+    <None Remove="res\Weapons\Sprite-Knife.png" />
+    <None Remove="res\Weapons\Sprite-Laurel.png" />
+    <None Remove="res\Weapons\Sprite-Lightning_Ring.png" />
+    <None Remove="res\Weapons\Sprite-Magic_Wand.png" />
+    <None Remove="res\Weapons\Sprite-Peachone.png" />
+    <None Remove="res\Weapons\Sprite-Pentagram.png" />
+    <None Remove="res\Weapons\Sprite-Runetracer.png" />
+    <None Remove="res\Weapons\Sprite-Santa_Water.png" />
+    <None Remove="res\Weapons\Sprite-Song_of_Mana.png" />
+    <None Remove="res\Weapons\Sprite-Whip.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="res\Character.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Antonio.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Arca.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Cavallo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Christine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Clerici.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Dommario.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Exdash.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Gennaro.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Imelda.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Krochi.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Lama.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-missingN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Mortaccio.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Pasqualina.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Poe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Poppea.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Porta.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Characters\Select-Red_Death.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Evolutions\Sprite-Bloody_Tear.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Evolutions\Sprite-Death_Spiral.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Evolutions\Sprite-Gorgeous_Moon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Evolutions\Sprite-Heaven_Sword.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Evolutions\Sprite-Hellfire.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Evolutions\Sprite-Holy_Wand.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Evolutions\Sprite-La_Borra.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Evolutions\Sprite-Mannajja.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Evolutions\Sprite-Soul_Eater.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Evolutions\Sprite-Thousand_Edge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Evolutions\Sprite-Thunder_Loop.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Evolutions\Sprite-Unholy_Vespers.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Images\introBG.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Images\PowerUpBackground.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Images\title.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Armor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Attractorb.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Bracer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Candelabrador.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Clover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Crown.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Duplicator.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Empty_Tome.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Hollow_Heart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Pummarola.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Reroll.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Skip.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Skull_O'Maniac.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Spellbinder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Spinach.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Stone_Mask.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Tiragisu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Items\Sprite-Wings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Axe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Bone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Cherry_Bomb.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Clock_Lancet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Cross.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Ebony_Wings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Fire_Wand.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Garlic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-King_Bible.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Knife.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Laurel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Lightning_Ring.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Magic_Wand.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Peachone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Pentagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Runetracer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Santa_Water.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Song_of_Mana.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\Weapons\Sprite-Whip.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

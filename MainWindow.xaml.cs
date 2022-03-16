@@ -23,7 +23,7 @@ namespace Vampire_Builder
     /// </summary>
     public partial class MainWindow : Window
     {
-        Character charChosenCharacter;
+        Character? charChosenCharacter = null;
         #region var_def
         //Integers defining the level of the powerups bought in the "POWER UP" section.
         int intPowerupMightLevel,
