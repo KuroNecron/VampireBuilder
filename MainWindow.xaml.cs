@@ -307,14 +307,6 @@ namespace Vampire_Builder
             UpdateInterface();
         }
 
-        #region Characterselect
-        private void btnAntonio(object sender, RoutedEventArgs e)
-        {
-            //TODO
-        }
-
-        #endregion
-
         private void btnActivateAllPowerups_Click(object sender, RoutedEventArgs e)
         {
 
@@ -905,18 +897,12 @@ namespace Vampire_Builder
             CalculateAttributes();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void chkbxGrowth4_Unchecked(object sender, RoutedEventArgs e)
         {
             chkbxGrowth5.IsChecked = false;
             intPowerupGrowthLevel = 3;
             CalculateAttributes();
         }
-
         private void chkbxGrowth5_Checked(object sender, RoutedEventArgs e)
         {
             chkbxGrowth1.IsChecked = true;
@@ -1166,5 +1152,93 @@ namespace Vampire_Builder
             CalculateAttributes();
         }
         #endregion
+
+        #region Characterselect
+        private void btnAntonio(object sender, RoutedEventArgs e)
+        {
+            //TODO
+        }
+
+        private void btnImelda(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnPasqualina(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnGennaro(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnArca(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnPorta(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnLama(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnPoe(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnClerici(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDommario(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnKrochi(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnChristine(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnPoppea(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMortaccio(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnCavallo(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnExdash(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnRed_Death(object sender, RoutedEventArgs e)
+        {
+
+        }
+        #endregion
+
     }
 }
