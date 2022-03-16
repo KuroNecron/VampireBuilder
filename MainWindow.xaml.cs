@@ -141,6 +141,7 @@ namespace Vampire_Builder
         {
             BitmapImage bmpPowerupBackground = new BitmapImage(new Uri(@"res\Images\PowerUpBackground.png", UriKind.Relative));
 
+            #region PowerUpSprites
             pngPowerupBackgroundMight.ImageSource = bmpPowerupBackground;
             pngItemSpinach.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Spinach.png", UriKind.Relative));
 
@@ -190,13 +191,30 @@ namespace Vampire_Builder
             pngItemRevival.Source = new BitmapImage(new Uri(@"res\Items\Sprite-Tiragisu.png", UriKind.Relative));
 
             pngPowerupBackgroundReroll.ImageSource = bmpPowerupBackground;
-            //pngItemReroll.Source = new BitmapImage(new Uri(@"res/Items/Sprite-")); //No Item associated, Sprite TODO
+            pngItemReroll.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Reroll", UriKind.Relative));
 
             pngPowerupBackgroundSkip.ImageSource = bmpPowerupBackground;
-            //pngItemSkip.Source = new BitmapImage(new Uri(@"res/Items/Sprite-")); //No Item associated, Sprite TODO
-
+            pngItemSkip.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Skip", UriKind.Relative));
+            #endregion
+            #region CharacterSelectSprites
             pngAntonio.Source = new BitmapImage(new Uri(@"res/Characters/Select-Antonio.png", UriKind.Relative));
-            //pngAntonioStartWeapon.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Whip.png", UriKind.Relative));
+            pngImelda.Source = new BitmapImage(new Uri(@"res/Characters/Select-Imelda.png", UriKind.Relative));
+            pngPasqualina.Source = new BitmapImage(new Uri(@"res/Characters/Select-Pasqualina.png", UriKind.Relative));
+            pngGennaro.Source = new BitmapImage(new Uri(@"res/Characters/Select-Gennaro.png", UriKind.Relative));
+            pngArca.Source = new BitmapImage(new Uri(@"res/Characters/Select-Arca.png", UriKind.Relative));
+            pngPorta.Source = new BitmapImage(new Uri(@"res/Characters/Select-Porta.png", UriKind.Relative));
+            pngLama.Source = new BitmapImage(new Uri(@"res/Characters/Select-Lama.png", UriKind.Relative));
+            pngPoe.Source = new BitmapImage(new Uri(@"res/Characters/Select-Poe.png", UriKind.Relative));
+            pngClerici.Source = new BitmapImage(new Uri(@"res/Characters/Select-Clerici.png", UriKind.Relative));
+            pngDommario.Source = new BitmapImage(new Uri(@"res/Characters/Select-Dommario.png", UriKind.Relative));
+            pngKrochi.Source = new BitmapImage(new Uri(@"res/Characters/Select-Krochi.png", UriKind.Relative));
+            pngChristine.Source = new BitmapImage(new Uri(@"res/Characters/Select-Christine.png", UriKind.Relative));
+            pngPoppea.Source = new BitmapImage(new Uri(@"res/Characters/Select-Poppea.png", UriKind.Relative));
+            pngMortaccio.Source = new BitmapImage(new Uri(@"res/Characters/Select-Mortaccio.png", UriKind.Relative));
+            pngCavallo.Source = new BitmapImage(new Uri(@"res/Characters/Select-Cavallo.png", UriKind.Relative));
+            pngExdash.Source = new BitmapImage(new Uri(@"res/Characters/Select-Exdash.png", UriKind.Relative));
+            pngRed_Death.Source = new BitmapImage(new Uri(@"res/Characters/Select-Red_Death.png", UriKind.Relative));
+            #endregion
         }
 
         private void ResetInterface()
