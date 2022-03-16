@@ -78,7 +78,7 @@ namespace Vampire_Builder
             //TODO
             intMaxHealthFinalValue = 0 + (intPowerupMaxHealthLevel * 10);
 
-            dblRecoveryFinalValue = 0 + (intPowerupRecoveryLevel * 0.1);
+            dblRecoveryFinalValue = Math.Round(0 + (intPowerupRecoveryLevel * 0.1), 1); //Round required, otherwise 3rd level goes to 0.300000000000000000000000. Why? IHNFC...
 
             intArmorFinalValue = 0 + (intPowerupArmorLevel * 1);
 
@@ -217,7 +217,44 @@ namespace Vampire_Builder
             #endregion
             #region EquipmentSprites
             #region EvolutionSprites
+            pngBackgroundBloodyTear.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBloodyTear.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Bloody_Tear.png", UriKind.Relative));
 
+            pngBackgroundHolyWand.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngHolyWand.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Holy_Wand.png", UriKind.Relative));
+
+            pngBackgroundThousandEdge.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngThousandEdge.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Thousand_Edge.png", UriKind.Relative));
+
+            pngBackgroundDeathSpiral.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngDeathSpiral.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Death_Spiral.png", UriKind.Relative));
+
+            pngBackgroundHeavenSword.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngHeavenSword.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Heaven_Sword.png", UriKind.Relative));
+
+            pngBackgroundUnholyVespers.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngUnholyVespers.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Unholy_Vespers.png", UriKind.Relative));
+
+            pngBackgroundHellfire.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngHellfire.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Hellfire.png", UriKind.Relative));
+
+            pngBackgroundSoulEater.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngSoulEater.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Soul_Eater.png", UriKind.Relative));
+
+            pngBackgroundLaBorra.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngLaBorra.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-La_Borra.png", UriKind.Relative));
+
+            pngBackgroundThunderLoop.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngThunderLoop.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Thunder_Loop.png", UriKind.Relative));
+
+            pngBackgroundGorgeousMoon.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngGorgeousMoon.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Gorgeous_Moon.png", UriKind.Relative));
+
+            pngBackgroundMannajja.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngMannajja.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Mannajja.png", UriKind.Relative));
+
+            pngBackgroundVandalier.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            //pngVandalier.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Vandalier.png", UriKind.Relative)); //Missing Sprite
             #endregion
             #endregion
         }
