@@ -1,0 +1,609 @@
+﻿<Window x:Class="Vampire_Builder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vampire_Builder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="900" Width="1600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1">
+            <StackPanel.Background>
+                <ImageBrush x:Name="imgBackground" Stretch="UniformToFill"/>
+            </StackPanel.Background>
+        </StackPanel>
+
+        <Grid Background="DarkGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Attribute Modifiers:" Grid.Row="0" Grid.ColumnSpan="2"/>
+
+            <Label Content="Max Health" Grid.Column="0" Grid.Row="1" Margin="1"/>
+            <Label x:Name="lblintMaxHealthFinalValue" Grid.Column="1" Grid.Row="1" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Recovery" Grid.Column="0" Grid.Row="2" Margin="1"/>
+            <Label x:Name="lbldblRecoveryFinalValue" Grid.Column="1" Grid.Row="2" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Armor" Grid.Column="0" Grid.Row="3" Margin="1"/>
+            <Label x:Name="lblintArmorFinalValue" Grid.Column="1" Grid.Row="3" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="MoveSpeed" Grid.Column="0" Grid.Row="4" Margin="1"/>
+            <Label x:Name="lblintMoveSpeedFinalValue" Grid.Column="1" Grid.Row="4" Margin="1" HorizontalAlignment="Right"/>
+
+
+            <Label Content="Might" Grid.Column="0" Grid.Row="6" Margin="1"/>
+            <Label x:Name="lblintMightFinalValue" Grid.Column="1" Grid.Row="6" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Area" Grid.Column="0" Grid.Row="7" Margin="1"/>
+            <Label x:Name="lblintAreaFinalValue" Grid.Column="1" Grid.Row="7" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Speed" Grid.Column="0" Grid.Row="8" Margin="1"/>
+            <Label x:Name="lblintSpeedFinalValue" Grid.Column="1" Grid.Row="8" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Duration" Grid.Column="0" Grid.Row="9" Margin="1"/>
+            <Label x:Name="lblintDurationFinalValue" Grid.Column="1" Grid.Row="9" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Amount" Grid.Column="0" Grid.Row="10" Margin="1"/>
+            <Label x:Name="lblintAmountFinalValue" Grid.Column="1" Grid.Row="10" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Cooldown" Grid.Column="0" Grid.Row="11" Margin="1"/>
+            <Label x:Name="lbldblCooldownFinalValue" Grid.Column="1" Grid.Row="11" Margin="1" HorizontalAlignment="Right"/>
+
+
+            <Label Content="Luck" Grid.Column="0" Grid.Row="13" Margin="1"/>
+            <Label x:Name="lblintLuckFinalValue" Grid.Column="1" Grid.Row="13" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Growth" Grid.Column="0" Grid.Row="14" Margin="1"/>
+            <Label x:Name="lblintGrowthFinalValue" Grid.Column="1" Grid.Row="14" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Greed" Grid.Column="0" Grid.Row="15" Margin="1"/>
+            <Label x:Name="lblintGreedFinalValue" Grid.Column="1" Grid.Row="15" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Curse" Grid.Column="0" Grid.Row="16" Margin="1"/>
+            <Label x:Name="lblintCurseFinalValue" Grid.Column="1" Grid.Row="16" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Magnet" Grid.Column="0" Grid.Row="17" Margin="1"/>
+            <Label x:Name="lblintMagnetFinalValue" Grid.Column="1" Grid.Row="17" Margin="1" HorizontalAlignment="Right"/>
+
+
+            <Label Content="Revival" Grid.Column="0" Grid.Row="19" Margin="1"/>
+            <Label x:Name="lblintRevivalFinalValue" Grid.Column="1" Grid.Row="19" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Reroll" Grid.Column="0" Grid.Row="20" Margin="1"/>
+            <Label x:Name="lblintRerollFinalValue" Grid.Column="1" Grid.Row="20" Margin="1" HorizontalAlignment="Right"/>
+
+            <Label Content="Skip" Grid.Column="0" Grid.Row="21" Margin="1"/>
+            <Label x:Name="lblintSkipFinalValue" Grid.Column="1" Grid.Row="21" Margin="1" HorizontalAlignment="Right"/>
+
+            <StackPanel x:Name="stckpnlFunctionButtons" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="23" VerticalAlignment="Bottom">
+                <Button x:Name="btnResetPowerUp" Content="Reset POWER UPs" Click="btnResetPowerUp_Click"/>
+                <Button x:Name="btnResetItems" Content="Reset Character and Items" Click="btnResetItems_Click"/>
+                <Button x:Name="btnResetAll" Content="Reset Everything" Click="btnResetAll_Click"/>
+            </StackPanel>
+        </Grid>
+        <TabControl Grid.Column="1" Width="Auto" Height="Auto" VerticalAlignment="Top" Background="LightGray">
+            <TabItem Header="POWER UP">
+                <Grid Height="Auto" Width="Auto" Margin="20" Background="#4c4f74">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="150"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="150"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Name="stckpnlMight" Grid.Column="0" Grid.Row="0" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundMight"/>
+                        </StackPanel.Background>
+                        <Label Content="Might" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemSpinach" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxMight1"
+                                      Checked="chkbxMight1_Checked" 
+                                      Unchecked="chkbxMight1_Unchecked"/>
+                            <CheckBox x:Name="chkbxMight2"
+                                      Checked="chkbxMight2_Checked" 
+                                      Unchecked="chkbxMight2_Unchecked"/>
+                            <CheckBox x:Name="chkbxMight3"
+                                      Checked="chkbxMight3_Checked" 
+                                      Unchecked="chkbxMight3_Unchecked"/>
+                            <CheckBox x:Name="chkbxMight4"
+                                      Checked="chkbxMight4_Checked" 
+                                      Unchecked="chkbxMight4_Unchecked"/>
+                            <CheckBox x:Name="chkbxMight5"
+                                      Checked="chkbxMight5_Checked" 
+                                      Unchecked="chkbxMight5_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlArmor" Grid.Column="1" Grid.Row="0" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundArmor"/>
+                        </StackPanel.Background>
+                        <Label Content="Armor" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemArmor" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxArmor1"
+                                      Checked="chkbxArmor1_Checked" 
+                                      Unchecked="chkbxArmor1_Unchecked"/>
+                            <CheckBox x:Name="chkbxArmor2"
+                                      Checked="chkbxArmor2_Checked" 
+                                      Unchecked="chkbxArmor2_Unchecked"/>
+                            <CheckBox x:Name="chkbxArmor3"
+                                      Checked="chkbxArmor3_Checked" 
+                                      Unchecked="chkbxArmor3_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlMaxHealth" Grid.Column="2" Grid.Row="0" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundMaxHealth"/>
+                        </StackPanel.Background>
+                        <Label Content="Max Health" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemMaxHealth" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxMaxHealth1"
+                                      Checked="chkbxMaxHealth1_Checked" 
+                                      Unchecked="chkbxMaxHealth1_Unchecked"/>
+                            <CheckBox x:Name="chkbxMaxHealth2"
+                                      Checked="chkbxMaxHealth2_Checked" 
+                                      Unchecked="chkbxMaxHealth2_Unchecked"/>
+                            <CheckBox x:Name="chkbxMaxHealth3"
+                                      Checked="chkbxMaxHealth3_Checked" 
+                                      Unchecked="chkbxMaxHealth3_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlRecovery" Grid.Column="3" Grid.Row="0" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundRecovery"/>
+                        </StackPanel.Background>
+                        <Label Content="Recovery" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemRecovery" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxRecovery1"
+                                      Checked="chkbxRecovery1_Checked" 
+                                      Unchecked="chkbxRecovery1_Unchecked"/>
+                            <CheckBox x:Name="chkbxRecovery2"
+                                      Checked="chkbxRecovery2_Checked" 
+                                      Unchecked="chkbxRecovery2_Unchecked"/>
+                            <CheckBox x:Name="chkbxRecovery3"
+                                      Checked="chkbxRecovery3_Checked" 
+                                      Unchecked="chkbxRecovery3_Unchecked"/>
+                            <CheckBox x:Name="chkbxRecovery4"
+                                      Checked="chkbxRecovery4_Checked" 
+                                      Unchecked="chkbxRecovery4_Unchecked"/>
+                            <CheckBox x:Name="chkbxRecovery5"
+                                      Checked="chkbxRecovery5_Checked" 
+                                      Unchecked="chkbxRecovery5_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlCooldown" Grid.Column="0" Grid.Row="1" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundCooldown"/>
+                        </StackPanel.Background>
+                        <Label Content="Cooldown" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemCooldown" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxCooldown1"
+                                      Checked="chkbxCooldown1_Checked" 
+                                      Unchecked="chkbxCooldown1_Unchecked"/>
+                            <CheckBox x:Name="chkbxCooldown2"
+                                      Checked="chkbxCooldown2_Checked" 
+                                      Unchecked="chkbxCooldown2_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlArea" Grid.Column="1" Grid.Row="1" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundArea"/>
+                        </StackPanel.Background>
+                        <Label Content="Area" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemArea" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxArea1"
+                                      Checked="chkbxArea1_Checked" 
+                                      Unchecked="chkbxArea1_Unchecked"/>
+                            <CheckBox x:Name="chkbxArea2"
+                                      Checked="chkbxArea2_Checked" 
+                                      Unchecked="chkbxArea2_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlSpeed" Grid.Column="2" Grid.Row="1" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundSpeed"/>
+                        </StackPanel.Background>
+                        <Label Content="Speed" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemSpeed" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxSpeed1"
+                                      Checked="chkbxSpeed1_Checked" 
+                                      Unchecked="chkbxSpeed1_Unchecked"/>
+                            <CheckBox x:Name="chkbxSpeed2"
+                                      Checked="chkbxSpeed2_Checked" 
+                                      Unchecked="chkbxSpeed2_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlDuration" Grid.Column="3" Grid.Row="1" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundDuration"/>
+                        </StackPanel.Background>
+                        <Label Content="Duration" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemDuration" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxDuration1"
+                                      Checked="chkbxDuration1_Checked" 
+                                      Unchecked="chkbxDuration1_Unchecked"/>
+                            <CheckBox x:Name="chkbxDuration2"
+                                      Checked="chkbxDuration2_Checked" 
+                                      Unchecked="chkbxDuration2_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlAmount" Grid.Column="0" Grid.Row="2" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundAmount"/>
+                        </StackPanel.Background>
+                        <Label Content="Amount" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemAmount" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxAmount1"
+                                      Checked="chkbxAmount1_Checked" 
+                                      Unchecked="chkbxAmount1_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlMoveSpeed" Grid.Column="1" Grid.Row="2" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundMoveSpeed"/>
+                        </StackPanel.Background>
+                        <Label Content="MoveSpeed" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemMoveSpeed" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxMoveSpeed1"
+                                      Checked="chkbxMoveSpeed1_Checked" 
+                                      Unchecked="chkbxMoveSpeed1_Unchecked"/>
+                            <CheckBox x:Name="chkbxMoveSpeed2"
+                                      Checked="chkbxMoveSpeed2_Checked" 
+                                      Unchecked="chkbxMoveSpeed2_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlMagnet" Grid.Column="2" Grid.Row="2" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundMagnet"/>
+                        </StackPanel.Background>
+                        <Label Content="Magnet" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemMagnet" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxMagnet1"
+                                      Checked="chkbxMagnet1_Checked" 
+                                      Unchecked="chkbxMagnet1_Unchecked"/>
+                            <CheckBox x:Name="chkbxMagnet2"
+                                      Checked="chkbxMagnet2_Checked" 
+                                      Unchecked="chkbxMagnet2_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlLuck" Grid.Column="3" Grid.Row="2" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundLuck"/>
+                        </StackPanel.Background>
+                        <Label Content="Luck" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemLuck" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxLuck1"
+                                      Checked="chkbxLuck1_Checked" 
+                                      Unchecked="chkbxLuck1_Unchecked"/>
+                            <CheckBox x:Name="chkbxLuck2"
+                                      Checked="chkbxLuck2_Checked" 
+                                      Unchecked="chkbxLuck2_Unchecked"/>
+                            <CheckBox x:Name="chkbxLuck3"
+                                      Checked="chkbxLuck3_Checked" 
+                                      Unchecked="chkbxLuck3_Unchecked"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlGrowth" Grid.Column="0" Grid.Row="3" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundGrowth"/>
+                        </StackPanel.Background>
+                        <Label Content="Growth" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemGrowth" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxGrowth1"
+                                      Checked="chkbxGrowth1_Checked" 
+                                      Unchecked="chkbxGrowth1_Unchecked"/>
+                            <CheckBox x:Name="chkbxGrowth2"
+                                      Checked="chkbxGrowth2_Checked" 
+                                      Unchecked="chkbxGrowth2_Unchecked"/>
+                            <CheckBox x:Name="chkbxGrowth3"
+                                      Checked="chkbxGrowth3_Checked" 
+                                      Unchecked="chkbxGrowth3_Unchecked"/>
+                            <CheckBox x:Name="chkbxGrowth4"
+                                      Checked="chkbxGrowth4_Checked" 
+                                      Unchecked="chkbxGrowth4_Unchecked"/>
+                            <CheckBox x:Name="chkbxGrowth5"
+                                      Checked="chkbxGrowth5_Checked" 
+                                      Unchecked="chkbxGrowth5_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlGreed" Grid.Column="1" Grid.Row="3" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundGreed"/>
+                        </StackPanel.Background>
+                        <Label Content="Greed" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemGreed" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxGreed1"
+                                      Checked="chkbxGreed1_Checked" 
+                                      Unchecked="chkbxGreed1_Unchecked"/>
+                            <CheckBox x:Name="chkbxGreed2"
+                                      Checked="chkbxGreed2_Checked" 
+                                      Unchecked="chkbxGreed2_Unchecked"/>
+                            <CheckBox x:Name="chkbxGreed3"
+                                      Checked="chkbxGreed3_Checked" 
+                                      Unchecked="chkbxGreed3_Unchecked"/>
+                            <CheckBox x:Name="chkbxGreed4"
+                                      Checked="chkbxGreed4_Checked" 
+                                      Unchecked="chkbxGreed4_Unchecked"/>
+                            <CheckBox x:Name="chkbxGreed5"
+                                      Checked="chkbxGreed5_Checked" 
+                                      Unchecked="chkbxGreed5_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlCurse" Grid.Column="2" Grid.Row="3" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundCurse"/>
+                        </StackPanel.Background>
+                        <Label Content="Curse" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemCurse" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxCurse1"
+                                      Checked="chkbxCurse1_Checked" 
+                                      Unchecked="chkbxCurse1_Unchecked"/>
+                            <CheckBox x:Name="chkbxCurse2"
+                                      Checked="chkbxCurse2_Checked" 
+                                      Unchecked="chkbxCurse2_Unchecked"/>
+                            <CheckBox x:Name="chkbxCurse3"
+                                      Checked="chkbxCurse3_Checked" 
+                                      Unchecked="chkbxCurse3_Unchecked"/>
+                            <CheckBox x:Name="chkbxCurse4"
+                                      Checked="chkbxCurse4_Checked" 
+                                      Unchecked="chkbxCurse4_Unchecked"/>
+                            <CheckBox x:Name="chkbxCurse5"
+                                      Checked="chkbxCurse5_Checked" 
+                                      Unchecked="chkbxCurse5_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlRevival" Grid.Column="3" Grid.Row="3" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundRevival"/>
+                        </StackPanel.Background>
+                        <Label Content="Revival" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemRevival" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxRevival1"
+                                      Checked="chkbxRevival1_Checked" 
+                                      Unchecked="chkbxRevival1_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlReroll" Grid.Column="0" Grid.Row="4" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundReroll"/>
+                        </StackPanel.Background>
+                        <Label Content="Reroll" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemReroll" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxReroll1"
+                                      Checked="chkbxReroll1_Checked" 
+                                      Unchecked="chkbxReroll1_Unchecked"/>
+                            <CheckBox x:Name="chkbxReroll2"
+                                      Checked="chkbxReroll2_Checked" 
+                                      Unchecked="chkbxReroll2_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Name="stckpnlSkip" Grid.Column="1" Grid.Row="4" Margin="3">
+                        <StackPanel.Background>
+                            <ImageBrush x:Name="pngPowerupBackgroundSkip"/>
+                        </StackPanel.Background>
+                        <Label Content="Skip" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 20, 0, 0"/>
+                        <Image x:Name="pngItemSkip" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 4, 0, 0"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="0,10,0,0">
+
+                            <CheckBox x:Name="chkbxSkip1"
+                                      Checked="chkbxSkip1_Checked" 
+                                      Unchecked="chkbxSkip1_Unchecked"/>
+                            <CheckBox x:Name="chkbxSkip2"
+                                      Checked="chkbxSkip2_Checked" 
+                                      Unchecked="chkbxSkip2_Unchecked"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <Button x:Name="btnActivateAllPowerups" 
+                            Grid.Column="2" Grid.Row="4" Margin="3" 
+                            Content="Select All Powerups" 
+                            Click="btnActivateAllPowerups_Click"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Characters">
+                <Grid Height="Auto" Width="Auto" Margin="20" x:Name="gridCharacters">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="229"/>
+                        <ColumnDefinition Width="229"/>
+                        <ColumnDefinition Width="229"/>
+                        <ColumnDefinition Width="229"/>
+                        <ColumnDefinition Width="229"/>
+                        <ColumnDefinition Width="229"/>
+                        <ColumnDefinition Width="229"/>
+                    </Grid.ColumnDefinitions>
+                    <!--219x222-->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="232"/>
+                        <RowDefinition Height="232"/>
+                        <RowDefinition Height="232"/>
+                    </Grid.RowDefinitions>
+
+                    <Button Click="btnAntonio" BorderBrush="Transparent" BorderThickness="0">
+                        <Image x:Name="pngAntonio"/>
+                    </Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Items">
+                <TabControl Margin="20" Width="Auto" Height="Auto" Background="LightGray">
+                    <TabItem Header="Evolutions">
+                        <Grid Height="Auto" Width="Auto" Margin="20" x:Name="gridEvolutions" Visibility="Hidden">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="75"/>
+                                <RowDefinition Height="75"/>
+                            </Grid.RowDefinitions>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Weapons">
+                        <Grid Height="Auto" Width="Auto" Margin="20" x:Name="gridWeapons" Visibility="Hidden">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="75"/>
+                                <RowDefinition Height="75"/>
+                                <RowDefinition Height="75"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center">
+                                <Label Content="Whip"/>
+                                <Image x:Name="pngWeaponWhip" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0"/>
+                            </StackPanel>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Passive Items">
+                        <Grid Height="Auto" Width="Auto" Margin="20" x:Name="gridItems" Visibility="Hidden">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                                <ColumnDefinition Width="75"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="75"/>
+                                <RowDefinition Height="75"/>
+                            </Grid.RowDefinitions>
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+            </TabItem>
+            <TabItem Header="Info">
+                <TextBlock>For more information on the order in which to buy POWER UPs check out
+                    <Hyperlink NavigateUri="https://benediktwerner.github.io/vampire-survivors-power-up-calculator/" RequestNavigate="Hyperlink_RequestNavigate">
+                        Benedikt Werners Vampire Survivors Power-Up Calculator
+                    </Hyperlink>
+                    !
+                </TextBlock>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
