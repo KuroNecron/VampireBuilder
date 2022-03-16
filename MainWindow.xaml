@@ -511,27 +511,106 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Characters">
-                <Grid Height="Auto" Width="Auto" Margin="20" x:Name="gridCharacters">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="229"/>
-                        <ColumnDefinition Width="229"/>
-                        <ColumnDefinition Width="229"/>
-                        <ColumnDefinition Width="229"/>
-                        <ColumnDefinition Width="229"/>
-                        <ColumnDefinition Width="229"/>
-                        <ColumnDefinition Width="229"/>
-                    </Grid.ColumnDefinitions>
-                    <!--219x222-->
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="232"/>
-                        <RowDefinition Height="232"/>
-                        <RowDefinition Height="232"/>
-                    </Grid.RowDefinitions>
+                <ScrollViewer>
+                    <Grid Height="Auto" Width="Auto" Margin="20" x:Name="gridCharacters">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="229"/>
+                            <ColumnDefinition Width="229"/>
+                            <ColumnDefinition Width="229"/>
+                            <ColumnDefinition Width="229"/>
+                        </Grid.ColumnDefinitions>
+                        <!--219x222-->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="232"/>
+                            <RowDefinition Height="232"/>
+                            <RowDefinition Height="232"/>
+                            <RowDefinition Height="232"/>
+                            <RowDefinition Height="232"/>
+                        </Grid.RowDefinitions>
 
-                    <Button Click="btnAntonio" BorderBrush="Transparent" BorderThickness="0">
-                        <Image x:Name="pngAntonio"/>
-                    </Button>
-                </Grid>
+                        <Button Click="btnAntonio" BorderBrush="Transparent" BorderThickness="0" Grid.Column="0" Grid.Row="0">
+                            <Image x:Name="pngAntonio"/>
+                        </Button>
+                        <Button Click="btnImelda" BorderBrush="Transparent" BorderThickness="0" Grid.Column="1" Grid.Row="0">
+                            <Image x:Name="pngImelda"/>
+                        </Button>
+                        <Button Click="btnPasqualina" BorderBrush="Transparent" BorderThickness="0" Grid.Column="2" Grid.Row="0">
+                            <Image x:Name="pngPasqualina"/>
+                        </Button>
+                        <Button Click="btnGennaro" BorderBrush="Transparent" BorderThickness="0" Grid.Column="3" Grid.Row="0">
+                            <Image x:Name="pngGennaro"/>
+                        </Button>
+
+                        <Button Click="btnArca" BorderBrush="Transparent" BorderThickness="0" Grid.Column="0" Grid.Row="1">
+                            <Image x:Name="pngArca"/>
+                        </Button>
+                        <Button Click="btnPorta" BorderBrush="Transparent" BorderThickness="0" Grid.Column="1" Grid.Row="1">
+                            <Image x:Name="pngPorta"/>
+                        </Button>
+                        <Button Click="btnLama" BorderBrush="Transparent" BorderThickness="0" Grid.Column="2" Grid.Row="1">
+                            <Image x:Name="pngLama"/>
+                        </Button>
+                        <Button Click="btnPoe" BorderBrush="Transparent" BorderThickness="0" Grid.Column="3" Grid.Row="1">
+                            <Image x:Name="pngPoe"/>
+                        </Button>
+
+
+                        <Button Click="btnClerici" BorderBrush="Transparent" BorderThickness="0" Grid.Column="0" Grid.Row="2">
+                            <Image x:Name="pngClerici"/>
+                        </Button>
+                        <Button Click="btnDommario" BorderBrush="Transparent" BorderThickness="0" Grid.Column="1" Grid.Row="2">
+                            <Image x:Name="pngDommario"/>
+                        </Button>
+                        <Button Click="btnKrochi" BorderBrush="Transparent" BorderThickness="0" Grid.Column="2" Grid.Row="2">
+                            <Image x:Name="pngKrochi"/>
+                        </Button>
+                        <Button Click="btnChristine" BorderBrush="Transparent" BorderThickness="0" Grid.Column="3" Grid.Row="2">
+                            <Image x:Name="pngChristine"/>
+                        </Button>
+
+
+                        <Button Click="btnPoppea" BorderBrush="Transparent" BorderThickness="0" Grid.Column="0" Grid.Row="3">
+                            <Image x:Name="pngPoppea"/>
+                        </Button>
+                        <Button Click="btnMortaccio" BorderBrush="Transparent" BorderThickness="0" Grid.Column="1" Grid.Row="3">
+                            <Image x:Name="pngMortaccio"/>
+                        </Button>
+                        <Button Click="btnCavallo" BorderBrush="Transparent" BorderThickness="0" Grid.Column="2" Grid.Row="3">
+                            <Image x:Name="pngCavallo"/>
+                        </Button>
+                        <Button Click="btnExdash" BorderBrush="Transparent" BorderThickness="0" Grid.Column="3" Grid.Row="3">
+                            <Image x:Name="pngExdash"/>
+                        </Button>
+                        
+                        <Button Click="btnRed_Death" BorderBrush="Transparent" BorderThickness="0" Grid.Column="0" Grid.Row="4">
+                            <Image x:Name="pngRed_Death"/>
+                        </Button>
+                        <!-- Space for more characters
+                        <Button Click="btnAntonio" BorderBrush="Transparent" BorderThickness="0" Grid.Column="1" Grid.Row="4">
+                            <Image x:Name="pngAntonio"/>
+                        </Button>
+                        <Button Click="btnAntonio" BorderBrush="Transparent" BorderThickness="0" Grid.Column="2" Grid.Row="4">
+                            <Image x:Name="pngAntonio"/>
+                        </Button>
+                        <Button Click="btnAntonio" BorderBrush="Transparent" BorderThickness="0" Grid.Column="3" Grid.Row="4">
+                            <Image x:Name="pngAntonio"/>
+                        </Button>
+
+                        <Button Click="btnAntonio" BorderBrush="Transparent" BorderThickness="0" Grid.Column="0" Grid.Row="5">
+                            <Image x:Name="pngAntonio"/>
+                        </Button>
+                        <Button Click="btnAntonio" BorderBrush="Transparent" BorderThickness="0" Grid.Column="1" Grid.Row="5">
+                            <Image x:Name="pngAntonio"/>
+                        </Button>
+                        <Button Click="btnAntonio" BorderBrush="Transparent" BorderThickness="0" Grid.Column="2" Grid.Row="5">
+                            <Image x:Name="pngAntonio"/>
+                        </Button>
+                        <Button Click="btnAntonio" BorderBrush="Transparent" BorderThickness="0" Grid.Column="3" Grid.Row="5">
+                            <Image x:Name="pngAntonio"/>
+                        </Button>
+                        -->
+                    </Grid>
+                </ScrollViewer>
             </TabItem>
             <TabItem Header="Items">
                 <TabControl Margin="20" Width="Auto" Height="Auto" Background="LightGray">

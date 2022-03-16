@@ -71,7 +71,6 @@ namespace Vampire_Builder
             FillImages();
             GetCharactersFromJSON();
             //ResetInterface();
-
         }
 
         public void CalculateAttributes()
@@ -904,6 +903,11 @@ namespace Vampire_Builder
             chkbxGrowth3.IsChecked = true;
             intPowerupGrowthLevel = 4;
             CalculateAttributes();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
 
         private void chkbxGrowth4_Unchecked(object sender, RoutedEventArgs e)
