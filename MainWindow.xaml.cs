@@ -191,10 +191,10 @@ namespace Vampire_Builder
             pngItemRevival.Source = new BitmapImage(new Uri(@"res\Items\Sprite-Tiragisu.png", UriKind.Relative));
 
             pngPowerupBackgroundReroll.ImageSource = bmpPowerupBackground;
-            pngItemReroll.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Reroll", UriKind.Relative));
+            pngItemReroll.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Reroll.png", UriKind.Relative));
 
             pngPowerupBackgroundSkip.ImageSource = bmpPowerupBackground;
-            pngItemSkip.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Skip", UriKind.Relative));
+            pngItemSkip.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Skip.png", UriKind.Relative));
             #endregion
             #region CharacterSelectSprites
             pngAntonio.Source = new BitmapImage(new Uri(@"res/Characters/Select-Antonio.png", UriKind.Relative));
