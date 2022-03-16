@@ -215,6 +215,11 @@ namespace Vampire_Builder
             pngExdash.Source = new BitmapImage(new Uri(@"res/Characters/Select-Exdash.png", UriKind.Relative));
             pngRed_Death.Source = new BitmapImage(new Uri(@"res/Characters/Select-Red_Death.png", UriKind.Relative));
             #endregion
+            #region EquipmentSprites
+            #region EvolutionSprites
+
+            #endregion
+            #endregion
         }
 
         private void ResetInterface()

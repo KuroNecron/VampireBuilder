@@ -612,68 +612,72 @@
                     </Grid>
                 </ScrollViewer>
             </TabItem>
-            <TabItem Header="Items">
-                <TabControl Margin="20" Width="Auto" Height="Auto" Background="LightGray">
-                    <TabItem Header="Evolutions">
-                        <Grid Height="Auto" Width="Auto" Margin="20" x:Name="gridEvolutions" Visibility="Hidden">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="75"/>
-                                <RowDefinition Height="75"/>
-                            </Grid.RowDefinitions>
-                        </Grid>
-                    </TabItem>
-                    <TabItem Header="Weapons">
-                        <Grid Height="Auto" Width="Auto" Margin="20" x:Name="gridWeapons" Visibility="Hidden">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="75"/>
-                                <RowDefinition Height="75"/>
-                                <RowDefinition Height="75"/>
-                            </Grid.RowDefinitions>
-                            <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center">
-                                <Label Content="Whip"/>
-                                <Image x:Name="pngWeaponWhip" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0"/>
+            <TabItem Header="Equipment">
+                <StackPanel>
+                    <Grid Height="Auto" Width="Auto" Margin="20" x:Name="gridEvolutions">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
+
+                        <StackPanel>
+                            <Label Content="Bloody Tear"/>
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <ImageBrush x:Name="pngBackgroundBloodyTear"/>
+                                </StackPanel.Background>
                             </StackPanel>
-                        </Grid>
-                    </TabItem>
-                    <TabItem Header="Passive Items">
-                        <Grid Height="Auto" Width="Auto" Margin="20" x:Name="gridItems" Visibility="Hidden">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                                <ColumnDefinition Width="75"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="75"/>
-                                <RowDefinition Height="75"/>
-                            </Grid.RowDefinitions>
-                        </Grid>
-                    </TabItem>
-                </TabControl>
+                        </StackPanel>
+                        
+                    </Grid>
+                    <Grid Height="Auto" Width="Auto" Margin="20" x:Name="gridWeapons">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center">
+                            <Label Content="Whip"/>
+                            <Image x:Name="pngWeaponWhip" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Height="Auto" Width="Auto" Margin="20" x:Name="gridItems">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
+                    </Grid>
+                </StackPanel>
             </TabItem>
             <TabItem Header="Info">
                 <TextBlock>For more information on the order in which to buy POWER UPs check out
