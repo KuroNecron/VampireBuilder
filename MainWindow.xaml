@@ -891,12 +891,310 @@
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="100"/>
-                                <RowDefinition Height="100"/>
+                                <RowDefinition Height="130."/>
                                 <RowDefinition Height="100"/>
                             </Grid.RowDefinitions>
-                            <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center">
-                                <Label Content="Whip"/>
-                                <Image x:Name="pngWeaponWhip" Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0"/>
+
+                            <StackPanel Grid.Row="0" Grid.Column="0">
+                                <Label Content="Whip" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundWhip"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngWhip" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="1">
+                                <Label Content="Magic Wand" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundMagicWand"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngMagicWand" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="2">
+                                <Label Content="Knife" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundKnife"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngKnife" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="3">
+                                <Label Content="Axe" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundAxe"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngAxe" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="4">
+                                <Label Content="Cross" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundCross"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngCross" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="5">
+                                <Label Content="King Bible" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundKingBible"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngKingBible" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="6">
+                                <Label Content="Fire Wand" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundFireWand"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngFireWand" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="7">
+                                <Label Content="Garlic" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundGarlic"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngGarlic" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="0">
+                                <Label Content="Santa Water" HorizontalAlignment="Center"/>
+                                <Label Height="25.96"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundSantaWater"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngSantaWater" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="1">
+                                <Label Content="Lightning Ring" HorizontalAlignment="Center"/>
+                                <Label Height="25.96"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundLightningRing"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngLightningRing" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="2">
+                                <Label Content="Pentagram" HorizontalAlignment="Center"/>
+                                <Label Height="25.96"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundPentagram"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngPentagram" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="3">
+                                <Label Content="Song of Mana" HorizontalAlignment="Center"/>
+                                <Label Height="25.96"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundSongOfMana"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngSongOfMana" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="4">
+                                <Label Content="Phiera Der" HorizontalAlignment="Center"/>
+                                <Label Content="Tuphello" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundPhiera"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngPhiera" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="5">
+                                <Label Content="Eight The" HorizontalAlignment="Center"/>
+                                <Label Content="Sparrow" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundEightTheSparrow"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngEightTheSparrow" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="6">
+                                <Label Content="Peachone" HorizontalAlignment="Center"/>
+                                <Label Height="25.96"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundPeachone"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngPeachone" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="7">
+                                <Label Content="Ebony Wings" HorizontalAlignment="Center"/>
+                                <Label Height="25.96"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundEbonyWings"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngEbonyWings" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="2" Grid.Column="0">
+                                <Label Content="Runetracer" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundRunetracer"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngRunetracer" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="2" Grid.Column="1">
+                                <Label Content="Clock Lancet" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundClockLancet"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngClockLancet" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="2" Grid.Column="2">
+                                <Label Content="Laurel" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundLaurel"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngLaurel" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="2" Grid.Column="3">
+                                <Label Content="Bone" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundBone"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngBone" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="2" Grid.Column="4">
+                                <Label Content="Cherry Bomb" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundCherryBomb"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngCherryBomb" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
                             </StackPanel>
                         </Grid>
                         <Label Content="Passive Items:"/>
@@ -915,6 +1213,230 @@
                                 <RowDefinition Height="100"/>
                                 <RowDefinition Height="100"/>
                             </Grid.RowDefinitions>
+
+                            <StackPanel Grid.Row="0" Grid.Column="0">
+                                <Label Content="Spinach" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundSpinach"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngSpinach" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="1">
+                                <Label Content="Armor" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundArmor"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngArmor" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="2">
+                                <Label Content="Hollow Heart" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundHollowHeart"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngHollowHeart" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="3">
+                                <Label Content="Pummarola" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundPummarola"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngPummarola" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="4">
+                                <Label Content="Empty Tome" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundEmptyTome"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngEmptyTome" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="5">
+                                <Label Content="Candelabrador" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundCandelabrador"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngCandelabrador" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="6">
+                                <Label Content="Bracer" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundBracer"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngBracer" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="7">
+                                <Label Content="Spellbinder" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundSpellbinder"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngSpellbinder" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="0">
+                                <Label Content="Duplicator" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundDuplicator"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngDuplicator" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="1">
+                                <Label Content="Wings" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundWings"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngWings" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="2">
+                                <Label Content="Attractorb" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundAttractorb"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngAttractorb" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="3">
+                                <Label Content="Clover" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundClover"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngClover" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="4">
+                                <Label Content="Crown" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundCrown"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngCrown" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="5">
+                                <Label Content="Stone Mask" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundStoneMask"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngStoneMask" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="6">
+                                <Label Content="Tiragisú" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundTiragisu"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngTiragisu" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="7">
+                                <Label Content="Skull O'Maniac" HorizontalAlignment="Center"/>
+                                <Button Style="{DynamicResource styleButtonEquipment}" Height="72" Width="72" BorderThickness="0">
+                                    <Button.Background>
+                                        <ImageBrush x:Name="pngBackgroundSkullOManiac"/>
+                                    </Button.Background>
+                                    <Button.Content>
+                                        <Image x:Name="pngSkullOManiac" Width="50" Height="50" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                                           Margin="0, 0, 0, 0"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
                         </Grid>
                     </StackPanel>
                 </ScrollViewer>

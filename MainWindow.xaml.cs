@@ -140,6 +140,7 @@ namespace Vampire_Builder
         private void FillImages()
         {
             BitmapImage bmpPowerupBackground = new BitmapImage(new Uri(@"res\Images\PowerUpBackground.png", UriKind.Relative));
+            BitmapImage bmpWeaponBackground = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
 
             #region PowerUpSprites
             pngPowerupBackgroundMight.ImageSource = bmpPowerupBackground;
@@ -217,44 +218,157 @@ namespace Vampire_Builder
             #endregion
             #region EquipmentSprites
             #region EvolutionSprites
-            pngBackgroundBloodyTear.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundBloodyTear.ImageSource = bmpWeaponBackground;
             pngBloodyTear.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Bloody_Tear.png", UriKind.Relative));
 
-            pngBackgroundHolyWand.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundHolyWand.ImageSource = bmpWeaponBackground;
             pngHolyWand.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Holy_Wand.png", UriKind.Relative));
 
-            pngBackgroundThousandEdge.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundThousandEdge.ImageSource = bmpWeaponBackground;
             pngThousandEdge.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Thousand_Edge.png", UriKind.Relative));
 
-            pngBackgroundDeathSpiral.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundDeathSpiral.ImageSource = bmpWeaponBackground;
             pngDeathSpiral.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Death_Spiral.png", UriKind.Relative));
 
-            pngBackgroundHeavenSword.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundHeavenSword.ImageSource = bmpWeaponBackground;
             pngHeavenSword.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Heaven_Sword.png", UriKind.Relative));
 
-            pngBackgroundUnholyVespers.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundUnholyVespers.ImageSource = bmpWeaponBackground;
             pngUnholyVespers.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Unholy_Vespers.png", UriKind.Relative));
 
-            pngBackgroundHellfire.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundHellfire.ImageSource = bmpWeaponBackground;
             pngHellfire.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Hellfire.png", UriKind.Relative));
 
-            pngBackgroundSoulEater.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundSoulEater.ImageSource = bmpWeaponBackground;
             pngSoulEater.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Soul_Eater.png", UriKind.Relative));
 
-            pngBackgroundLaBorra.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundLaBorra.ImageSource = bmpWeaponBackground;
             pngLaBorra.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-La_Borra.png", UriKind.Relative));
 
-            pngBackgroundThunderLoop.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundThunderLoop.ImageSource = bmpWeaponBackground;
             pngThunderLoop.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Thunder_Loop.png", UriKind.Relative));
 
-            pngBackgroundGorgeousMoon.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundGorgeousMoon.ImageSource = bmpWeaponBackground;
             pngGorgeousMoon.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Gorgeous_Moon.png", UriKind.Relative));
 
-            pngBackgroundMannajja.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundMannajja.ImageSource = bmpWeaponBackground;
             pngMannajja.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Mannajja.png", UriKind.Relative));
 
-            pngBackgroundVandalier.ImageSource = new BitmapImage(new Uri(@"res/Images/WeaponBackground.png", UriKind.Relative));
+            pngBackgroundVandalier.ImageSource = bmpWeaponBackground;
             pngVandalier.Source = new BitmapImage(new Uri(@"res/Evolutions/Sprite-Vandalier.png", UriKind.Relative));
+            #endregion
+            #region WeaponSprites
+            pngBackgroundWhip.ImageSource = bmpWeaponBackground;
+            pngWhip.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Whip.png", UriKind.Relative));
+
+            pngBackgroundMagicWand.ImageSource = bmpWeaponBackground;
+            pngMagicWand.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Magic_Wand.png", UriKind.Relative));
+
+            pngBackgroundKnife.ImageSource = bmpWeaponBackground;
+            pngKnife.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Knife.png", UriKind.Relative));
+
+            pngBackgroundAxe.ImageSource = bmpWeaponBackground;
+            pngAxe.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Axe.png", UriKind.Relative));
+
+            pngBackgroundCross.ImageSource = bmpWeaponBackground;
+            pngCross.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Cross.png", UriKind.Relative));
+
+            pngBackgroundKingBible.ImageSource = bmpWeaponBackground;
+            pngKingBible.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-King_Bible.png", UriKind.Relative));
+
+            pngBackgroundFireWand.ImageSource = bmpWeaponBackground;
+            pngFireWand.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Fire_Wand.png", UriKind.Relative));
+
+            pngBackgroundGarlic.ImageSource = bmpWeaponBackground;
+            pngGarlic.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Garlic.png", UriKind.Relative));
+
+            pngBackgroundSantaWater.ImageSource = bmpWeaponBackground;
+            pngSantaWater.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Santa_Water.png", UriKind.Relative));
+
+            pngBackgroundLightningRing.ImageSource = bmpWeaponBackground;
+            pngLightningRing.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Lightning_Ring.png", UriKind.Relative));
+
+            pngBackgroundPentagram.ImageSource = bmpWeaponBackground;
+            pngPentagram.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Pentagram.png", UriKind.Relative));
+
+            pngBackgroundSongOfMana.ImageSource = bmpWeaponBackground;
+            pngSongOfMana.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Song_Of_Mana.png", UriKind.Relative));
+
+            pngBackgroundPhiera.ImageSource = bmpWeaponBackground;
+            //pngPhiera.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-")) //TODO, Sprite Missing
+
+            pngBackgroundEightTheSparrow.ImageSource = bmpWeaponBackground;
+            //pngEightTheSparrow.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-")) //TODO, Sprite Missing
+
+            pngBackgroundPeachone.ImageSource = bmpWeaponBackground;
+            pngPeachone.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Peachone.png", UriKind.Relative));
+
+            pngBackgroundEbonyWings.ImageSource = bmpWeaponBackground;
+            pngEbonyWings.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Ebony_Wings.png", UriKind.Relative));
+
+            pngBackgroundRunetracer.ImageSource = bmpWeaponBackground;
+            pngRunetracer.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Runetracer.png", UriKind.Relative));
+
+            pngBackgroundClockLancet.ImageSource = bmpWeaponBackground;
+            pngClockLancet.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Clock_Lancet.png", UriKind.Relative));
+
+            pngBackgroundLaurel.ImageSource = bmpWeaponBackground;
+            pngLaurel.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Laurel.png", UriKind.Relative));
+
+            pngBackgroundBone.ImageSource = bmpWeaponBackground;
+            pngBone.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Bone.png", UriKind.Relative));
+
+            pngBackgroundCherryBomb.ImageSource = bmpWeaponBackground;
+            pngCherryBomb.Source = new BitmapImage(new Uri(@"res/Weapons/Sprite-Cherry_Bomb.png", UriKind.Relative));
+            #endregion
+            #region PassiveSprites
+            pngBackgroundSpinach.ImageSource = bmpWeaponBackground;
+            pngSpinach.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Spinach.png", UriKind.Relative));
+
+            pngBackgroundArmor.ImageSource = bmpWeaponBackground;
+            pngArmor.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Armor.png", UriKind.Relative));
+
+            pngBackgroundHollowHeart.ImageSource = bmpWeaponBackground;
+            pngHollowHeart.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Hollow_Heart.png", UriKind.Relative));
+
+            pngBackgroundPummarola.ImageSource = bmpWeaponBackground;
+            pngPummarola.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Pummarola.png", UriKind.Relative));
+
+            pngBackgroundEmptyTome.ImageSource = bmpWeaponBackground;
+            pngEmptyTome.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Empty_Tome.png", UriKind.Relative));
+
+            pngBackgroundCandelabrador.ImageSource = bmpWeaponBackground;
+            pngCandelabrador.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Candelabrador.png", UriKind.Relative));
+
+            pngBackgroundBracer.ImageSource = bmpWeaponBackground;
+            pngBracer.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Bracer.png", UriKind.Relative));
+
+            pngBackgroundSpellbinder.ImageSource = bmpWeaponBackground;
+            pngSpellbinder.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Spellbinder.png", UriKind.Relative));
+
+            pngBackgroundDuplicator.ImageSource = bmpWeaponBackground;
+            pngDuplicator.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Duplicator.png", UriKind.Relative));
+
+            pngBackgroundWings.ImageSource = bmpWeaponBackground;
+            pngWings.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Wings.png", UriKind.Relative));
+
+            pngBackgroundAttractorb.ImageSource = bmpWeaponBackground;
+            pngAttractorb.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Attractorb.png", UriKind.Relative));
+
+            pngBackgroundClover.ImageSource = bmpWeaponBackground;
+            pngClover.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Clover.png", UriKind.Relative));
+
+            pngBackgroundCrown.ImageSource = bmpWeaponBackground;
+            pngCrown.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Crown.png", UriKind.Relative));
+
+            pngBackgroundStoneMask.ImageSource = bmpWeaponBackground;
+            pngStoneMask.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Stone_Mask.png", UriKind.Relative));
+
+            pngBackgroundTiragisu.ImageSource = bmpWeaponBackground;
+            pngTiragisu.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Tiragisu.png", UriKind.Relative));
+
+            pngBackgroundSkullOManiac.ImageSource = bmpWeaponBackground;
+            pngSkullOManiac.Source = new BitmapImage(new Uri(@"res/Items/Sprite-Skull_O'Maniac.png", UriKind.Relative));
             #endregion
             #endregion
         }
@@ -270,6 +384,7 @@ namespace Vampire_Builder
         }
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
         {
+            //TODO fix link opening
             Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
             e.Handled = true;
         }
